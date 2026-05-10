@@ -24,7 +24,7 @@ const projects = [
     stack: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     links: [
       { label: "GitHub →", url: "https://github.com/Mansur-WP/tastehaven" },
-      { label: "Live Demo →", url: "#" }
+      { label: "Live Demo →", url: "https://ember-oak-pi.vercel.app/" }
     ]
   },
   {
