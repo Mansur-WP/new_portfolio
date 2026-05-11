@@ -1,7 +1,7 @@
 const projects = [
   {
     icon: "🤖",
-    title: "Dandali AI News System",
+    title: "NaijaGrid AI News System",
     status: "Live",
     statusType: "live",
     problem: "Local news content was slow, manual and inconsistent.",
@@ -10,7 +10,7 @@ const projects = [
     stack: ["n8n", "WordPress", "OpenAI API", "REST APIs", "Automation"],
     links: [
       { label: "GitHub →", url: "#" },
-      { label: "Live Demo →", url: "#" }
+      { label: "Live Demo →", url: "https://naijagrid.gt.tc/wp/" }
     ]
   },
   {
