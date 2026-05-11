@@ -43,7 +43,7 @@ const projects = [
   {
         icon: "🧠",
     title: "Cognix – AI Copilot",
-    status: "MVP", 
+    status: "Live", 
     statusType: "live",
     problem: "A need for a lightweight, intelligent AI assistant with a seamless user interface for smarter task execution.",
     description: "A full-stack AI conversational interface powered by Google's Gemini LLM. It features a modern, responsive frontend with a premium dark-mode aesthetic and an optimized async Python backend for low-latency AI responses.",
