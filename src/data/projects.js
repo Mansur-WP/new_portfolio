@@ -51,7 +51,7 @@ const projects = [
     stack: ["HTML/CSS/JS", "Python", "FastAPI", "Google Gemini API"],
     links: [
       { label: "GitHub →", url: "https://github.com/Mansur-WP/cognix-ai-copilot" },
-      { label: "Live Demo →", url: "#" }
+      { label: "Live Demo →", url: "https://cognix-copilot.netlify.app" }
 
     ]
 
