@@ -4,8 +4,8 @@ const projects = [
     title: "NaijaGrid AI News System",
     status: "Live",
     statusType: "live",
-    problem: "Local AI news was slow and inconsistent.",
-    description: "Automated an n8n + WordPress pipeline to scrape, summarize, and publish AI news on a schedule—no manual input.",
+    problem: "Local AI news was slow and unreliable.",
+    description: "Automated scraping, summarizing, and scheduled publishing (n8n + WordPress).",
     learned: "Automation architecture, API chaining, prompt engineering for content pipelines, and how to build systems that run without you.",
     stack: ["n8n", "WordPress", "OpenAI API", "REST APIs", "Automation"],
     links: [
@@ -45,8 +45,8 @@ const projects = [
     title: "Cognix – AI Copilot",
     status: "Live",
     statusType: "live",
-    problem: "A need for a lightweight, intelligent AI assistant with a seamless user interface for smarter task execution.",
-    description: "A full-stack AI conversational interface powered by Google's Gemini LLM. It features a modern, responsive frontend with a premium dark-mode aesthetic and an optimized async Python backend for low-latency AI responses.",
+    problem: "People wanted a lightweight AI assistant with a smooth UI.",
+    description: "Gemini-powered chat with an optimized async Python backend and modern dark-mode frontend.",
     learned: "FastAPI server setup, API integration with Google Generative AI, system prompting for strict conversational control, and modern frontend styling (glass-morphism & CSS animations).",
     stack: ["HTML/CSS/JS", "Python", "FastAPI", "Google Gemini API"],
     links: [
@@ -62,9 +62,9 @@ const projects = [
     status: "Live",
     statusType: "live",
     problem:
-      "Complete beginners have no clear starting point when trying to explore programming languages — they don't know what each language does, how hard it is, or which one to learn first.",
+      "Beginners don’t know what to learn first or why.",
     description:
-      "A clean, beginner-friendly web platform that helps newcomers discover programming languages, understand their use cases, explore learning categories, and find their perfect first language through an interactive quiz.",
+      "Helped users discover languages by use-case, difficulty, and an interactive quiz.",
     learned:
       "Building a multi-page React app with React Router, managing state with localStorage for bookmarks, structuring reusable component architecture, and designing an intuitive UI for a non-technical audience.",
     stack: [
@@ -85,9 +85,9 @@ const projects = [
     status: "In Progress",
     statusType: "wip",
     problem:
-      "Students, developers, and busy professionals often struggle with scattered tasks, poor workflow organization, and productivity tools that feel cluttered or outdated.",
+      "Tasks get scattered and workflows feel cluttered.",
     description:
-      "TaskFlowr is a modern productivity and workflow management web app focused on clean design, smooth interactions, and efficient task organization. It features task tracking, priorities, categories, analytics, dark/light themes, and a futuristic dashboard experience designed to make productivity feel effortless.",
+      "Productivity app with task tracking, priorities, analytics, themes, and a smooth dashboard.",
     learned:
       "Improved my understanding of full-stack Flask development, responsive dashboard UI design, authentication systems, task state management, drag-and-drop interactions, and building scalable SaaS-style applications with modern UX principles.",
     stack: [
