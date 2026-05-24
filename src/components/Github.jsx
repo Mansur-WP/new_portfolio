@@ -67,7 +67,7 @@ const Github = () => {
             </div>
             <div className="gh-stat">
               <div className="gh-stat-n">
-                {loading ? "—" : stats.projects || "4"}
+                {loading ? "—" : stats.projects || "6+"}
               </div>
               <div className="gh-stat-l">Projects</div>
             </div>

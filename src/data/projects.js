@@ -4,8 +4,8 @@ const projects = [
     title: "NaijaGrid AI News System",
     status: "Live",
     statusType: "live",
-    problem: "Local news content was slow, manual and inconsistent.",
-    description: "Built an automated blog pipeline using n8n + WordPress that scrapes, summarizes and publishes AI-generated news articles with zero manual input. Runs on a schedule and handles formatting, categories and SEO metadata automatically.",
+    problem: "Local AI news was slow and inconsistent.",
+    description: "Automated an n8n + WordPress pipeline to scrape, summarize, and publish AI news on a schedule—no manual input.",
     learned: "Automation architecture, API chaining, prompt engineering for content pipelines, and how to build systems that run without you.",
     stack: ["n8n", "WordPress", "OpenAI API", "REST APIs", "Automation"],
     links: [
@@ -41,9 +41,9 @@ const projects = [
     ]
   },
   {
-        icon: "🧠",
+    icon: "🧠",
     title: "Cognix – AI Copilot",
-    status: "Live", 
+    status: "Live",
     statusType: "live",
     problem: "A need for a lightweight, intelligent AI assistant with a seamless user interface for smarter task execution.",
     description: "A full-stack AI conversational interface powered by Google's Gemini LLM. It features a modern, responsive frontend with a premium dark-mode aesthetic and an optimized async Python backend for low-latency AI responses.",
@@ -55,7 +55,59 @@ const projects = [
 
     ]
 
+  },
+  {
+    icon: "🌱",
+    title: "KodePath",
+    status: "Live",
+    statusType: "live",
+    problem:
+      "Complete beginners have no clear starting point when trying to explore programming languages — they don't know what each language does, how hard it is, or which one to learn first.",
+    description:
+      "A clean, beginner-friendly web platform that helps newcomers discover programming languages, understand their use cases, explore learning categories, and find their perfect first language through an interactive quiz.",
+    learned:
+      "Building a multi-page React app with React Router, managing state with localStorage for bookmarks, structuring reusable component architecture, and designing an intuitive UI for a non-technical audience.",
+    stack: [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "Framer Motion",
+      "JavaScript",
+    ],
+    links: [
+      { label: "Live Demo →", url: "https://kodepath.vercel.app" },
+      { label: "GitHub →", url: "https://github.com/Mansur-WP/kodepath" },
+    ],
+  },
+  {
+    icon: "🌊",
+    title: "TaskFlowr",
+    status: "In Progress",
+    statusType: "wip",
+    problem:
+      "Students, developers, and busy professionals often struggle with scattered tasks, poor workflow organization, and productivity tools that feel cluttered or outdated.",
+    description:
+      "TaskFlowr is a modern productivity and workflow management web app focused on clean design, smooth interactions, and efficient task organization. It features task tracking, priorities, categories, analytics, dark/light themes, and a futuristic dashboard experience designed to make productivity feel effortless.",
+    learned:
+      "Improved my understanding of full-stack Flask development, responsive dashboard UI design, authentication systems, task state management, drag-and-drop interactions, and building scalable SaaS-style applications with modern UX principles.",
+    stack: [
+      "Python",
+      "Flask",
+      "SQLite",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Tailwind CSS",
+      "SQLAlchemy",
+      "Flask-Login",
+      "Jinja2",
+    ],
+    links: [
+      { label: "GitHub →", url: "https://github.com/Mansur-WP/taskflowr" },
+      { label: "Live Demo →", url: "https://taskflowr.vercel.app" },
+    ],
   }
 ];
 
 export default projects;
+

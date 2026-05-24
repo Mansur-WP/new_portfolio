@@ -9,19 +9,26 @@ const values = [
   {
     icon: "🌍",
     title: "Local-first thinking",
-    desc: "The best software I can build is software that solves real Nigerian problems — not just global templates.",
+    desc: "The best software solves real Nigerian problems — not just global templates with a Naira sign slapped on.",
   },
   {
-    icon: "📖",
-    title: "Always learning",
-    desc: "Currently deep in Python, Laravel architecture, and AI system design. Learning in public, building in real-time.",
+    icon: "📦",
+    title: "Builder in public",
+    desc: "6 projects shipped while in university. Each one taught me something documentation never could.",
   },
+  // {
+  //   icon: "📖",
+  //   title: "Always learning",
+  //   desc: "Currently deep in Python, ML foundations, Laravel architecture, and AI system design.",
+  // },
 ];
 
 function ValueItem({ icon, title, desc }) {
   return (
     <div className="value-item">
-      <div className="value-icon" aria-hidden="true">{icon}</div>
+      <div className="value-icon" aria-hidden="true">
+        {icon}
+      </div>
       <div>
         <div className="value-title">{title}</div>
         <div className="value-desc">{desc}</div>
@@ -39,26 +46,40 @@ const About = () => (
         <div className="about-text">
           <p>
             I'm <strong>Mansur</strong> — a software engineering student at
-            Northwest University Kano, Nigeria. I don't just write code. I
-            build systems that do things while I sleep.
+            Northwest University Kano, Nigeria, building real products while
+            still in school.
           </p>
           <p>
-            My journey started with curiosity about how things work on the
-            internet. That curiosity turned into building real products — an
-            automated AI news pipeline, a SaaS platform for photographers,
-            and now an AI chatbot for local businesses.
+            I don't just study code. I ship it. So far I've built an AI-powered
+            news pipeline, a SaaS platform for photographers, a beginner coding
+            guide, and an AI chatbot — each one solving a real problem I
+            noticed around me.
           </p>
           <p>
-            What drives me isn't chasing trends. It's{" "}
-            <strong>solving problems that matter in my environment</strong> —
-            Nigeria, the North, the people around me. I want to build tools
-            that work here, for us.
+            What drives me is simple: build systems that work for Nigeria, for
+            the North, for the people around me. Not just global templates
+            copy-pasted into our context.
           </p>
           <p>
-            I also run a YouTube channel sharing Islamic reminders with Muslim
-            youth — because building the dunya and the deen aren't opposites.
-            They can coexist.
+            Outside of code, I run a YouTube channel sharing Islamic reminders
+            for Muslim youth — because building the dunya and the deen aren't
+            opposites.
           </p>
+
+          <div className="about-stats" aria-label="Quick stats">
+            <div className="about-stat">
+              <div className="about-stat-number">6</div>
+              <div className="about-stat-label">Projects Built</div>
+            </div>
+            <div className="about-stat">
+              <div className="about-stat-number">2025</div>
+              <div className="about-stat-label">Started Coding</div>
+            </div>
+            {/* <div className="about-stat">
+              <div className="about-stat-number">1</div>
+              <div className="about-stat-label">University</div>
+            </div> */}
+          </div>
         </div>
         <aside className="about-values" aria-label="Core values">
           {values.map((v, i) => (
@@ -71,3 +92,4 @@ const About = () => (
 );
 
 export default About;
+
