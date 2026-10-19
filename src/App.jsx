@@ -3,29 +3,31 @@ import "./App.css";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import TechStrip from "./components/TechStrip";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import About from "./components/About";
 import Github from "./components/Github";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
-  // Scroll reveal observer
+  // Intersection Observer for graceful subtle entrance animations
   useEffect(() => {
     const reveals = document.querySelectorAll(
-      ".proj-card, .skill-group, .value-item, .gh-stat, .sec-tag, .sec-title, .sec-sub, .about-text, .contact-left, .contact-form, .gh-left"
+      ".proj-card, .skill-group-col, .about-value-card, .gh-stat-card, .specialty-card"
     );
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("reveal", "visible");
+            entry.target.classList.add("visible");
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
 
     reveals.forEach((el) => {
@@ -37,30 +39,19 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="portfolio-app">
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
+        <TechStrip />
         <Projects />
         <Skills />
         <About />
         <Github />
         <Contact />
       </main>
-      <footer>
-        <p>
-          Built with purpose by{" "}
-          <a
-            href="https://github.com/Mansur-WP/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mansur
-          </a>{" "}
-          · {new Date().getFullYear()}
-        </p>
-      </footer>
-    </>
+      <Footer />
+    </div>
   );
 }
 

@@ -1,29 +1,32 @@
 const skills = [
   {
-    group: "Frontend",
+    category: "Frontend",
+    tagline: "User interfaces & client-side apps",
     items: [
-      { name: "HTML / CSS", level: 90 },
-      { name: "JavaScript", level: 72 },
-      { name: "React", level: 55 },
-      { name: "Next.js", level: 50 },
+      { name: "React", type: "UI Library", color: "#61dafb" },
+      { name: "Next.js", type: "Fullstack Framework", color: "#ffffff" },
+      { name: "JavaScript", type: "ES6+ / Modern", color: "#f7df1e" },
+      { name: "HTML & CSS", type: "Responsive & Modern", color: "#38bdf8" },
     ],
   },
   {
-    group: "Backend",
+    category: "Backend",
+    tagline: "Server logic, APIs & data",
     items: [
-      { name: "PHP / Laravel", level: 75 },
-      { name: "Python", level: 60 },
-      { name: "REST APIs", level: 68 },
-      { name: "SQLite / MySQL", level: 65 },
+      { name: "PHP / Laravel", type: "MVC Framework", color: "#ff2d20" },
+      { name: "Python", type: "Scripting & Logic", color: "#38bdf8" },
+      { name: "REST APIs", type: "Endpoints & Auth", color: "#34d399" },
+      { name: "SQLite / MySQL", type: "Relational DB", color: "#0284c7" },
     ],
   },
   {
-    group: "Tools & Systems",
+    category: "AI & Automation",
+    tagline: "Workflows, bots & systems",
     items: [
-      { name: "n8n Automation", level: 80 },
-      { name: "Git & GitHub", level: 70 },
-      { name: "WordPress", level: 75 },
-      { name: "OpenAI / AI Tools", level: 65 },
+      { name: "n8n Automation", type: "Workflow Engine", color: "#ea4b71" },
+      { name: "OpenAI / AI Tools", type: "LLM Agents & APIs", color: "#10a37f" },
+      { name: "Git & GitHub", type: "Version Control", color: "#f05032" },
+      { name: "WordPress", type: "Custom CMS", color: "#21759b" },
     ],
   },
 ];

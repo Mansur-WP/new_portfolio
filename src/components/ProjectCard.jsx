@@ -5,52 +5,74 @@ const ProjectCard = ({
   title,
   status,
   statusType,
-  problem,
   description,
   stack,
+  image,
   links,
 }) => {
   const maxTags = 3;
-  const shown = stack?.slice(0, maxTags) ?? [];
-  const remaining = Math.max((stack?.length ?? 0) - shown.length, 0);
-
+  const shownTags = stack?.slice(0, maxTags) ?? [];
+  const remainingCount = Math.max((stack?.length ?? 0) - shownTags.length, 0);
 
   return (
-    <div className="proj-card">
-      <div className="proj-top">
-        <div className="proj-icon">{icon}</div>
-        <div className="proj-title">{title}</div>
-        <span className={`proj-status status-${statusType}`}>{status}</span>
-      </div>
-
-      <div className="proj-problem">{problem}</div>
-      <p className="proj-desc">{description}</p>
-
-      <div className="proj-stack">
-        {shown.map((tech, i) => (
-          <span className="stag" key={tech + i}>
-            {tech}
+    <article className="proj-card">
+      <div className="proj-header">
+        <div className="proj-title-group">
+          <span className="proj-icon-wrapper" aria-hidden="true">
+            {icon}
           </span>
-        ))}
-        {remaining > 0 && <span className="stag stag-more">+{remaining} more</span>}
+          <h3 className="proj-title">{title}</h3>
+        </div>
+        <span className={`proj-status-badge status-${statusType}`}>
+          {status}
+        </span>
       </div>
 
-      <div className="proj-links">
-        {links.map((link, i) => (
-          <a
-            href={link.url}
-            key={link.url + i}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="proj-link"
-          >
-            {link.label}
-          </a>
-        ))}
+      <div className="proj-body">
+        <div className="proj-info">
+          <p className="proj-desc">{description}</p>
+
+          <div className="proj-stack-tags">
+            {shownTags.map((tech) => (
+              <span className="stack-tag" key={tech}>
+                {tech}
+              </span>
+            ))}
+            {remainingCount > 0 && (
+              <span className="stack-tag stack-tag-more">
+                +{remainingCount}
+              </span>
+            )}
+          </div>
+
+          <div className="proj-actions">
+            {links?.map((link) => (
+              <a
+                href={link.url}
+                key={link.label}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="proj-action-link"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {image && (
+          <div className="proj-preview-wrap">
+            <img
+              src={image}
+              alt={`${title} interface preview`}
+              className="proj-preview-img"
+              loading="lazy"
+            />
+          </div>
+        )}
       </div>
-    </div>
+    </article>
   );
 };
-
 
 export default ProjectCard;
